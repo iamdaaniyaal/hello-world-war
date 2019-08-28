@@ -2,7 +2,7 @@ node {
    def mvnHome
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
-      git url: 'https://github.com/harijayan1797/ashok.git'
+      git url: 'https://github.com/iamdaaniyaal/hello-world-war.git'
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
@@ -28,7 +28,7 @@ node {
    }
    stage('Google Cloud Storage Push') {
       //gsutil cp 'target/*.jar' 'gs://jenkins--bucket'
-    googleStorageUpload bucket: 'gs://project-bucket1', credentialsId:'instance 32537', pattern: 'target/*.war'
+    googleStorageUpload bucket: 'gs://new-bucket111', credentialsId:'instance 32537', pattern: 'target/*.war'
    }
   
 
